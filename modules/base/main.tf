@@ -27,8 +27,8 @@ module "fargate" {
   api_count                   = lookup(var.api_count, var.env)
   api_cpu                     = lookup(var.api_cpu, var.env)
   api_memory                  = lookup(var.api_memory, var.env)
-  base_namespace              = local.payment_api_namespace
-  base_tags                   = local.default_tags
+  base_namespace              = "some namespace"
+  base_tags                   = "tags"
   ecs_task_execution_role_arn = module.ecs_task_execution_role.this_iam_role_arn
   ecs_task_execution_role_id  = module.ecs_task_execution_role.this_iam_role_name
   private_subnet_ids          = module.vpc.private_subnets
