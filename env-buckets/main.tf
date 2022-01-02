@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "dev_tf_state_store" {
-  bucket = "dev-v2-tf-state"
+  bucket = "dev-tf-state"
 
   server_side_encryption_configuration {
     rule {
