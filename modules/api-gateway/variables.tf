@@ -1,10 +1,10 @@
 variable "lambda_invoke_arn" {
   type        = string
-  description = "Deployment scale up lambda invoke arn"
+  description = "Lambda invoke arn"
 }
 variable "lambda_function_name" {
   type        = string
-  description = "Deployment scale up lambda function name"
+  description = "Lambda function name"
 }
 variable "env" {
   type        = string
